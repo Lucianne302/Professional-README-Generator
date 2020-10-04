@@ -4,25 +4,53 @@ function generateMarkdown(data) {
   
   return `##Title: ${data.title}
 
-##Description: ${data.desc}
+## Table of Contents: 
+* [Description](#description) 
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#licenses)
+* [Contributors](#contributors)
+* [Tests](#tests)
+* [Questions](#questions)
 
-##Installation: ${data.installation}
+#Badge 
+# <a name="badge"></a>
+${data.confirmAddBadge}
 
-##Usage: ${data.usage}
+#Description 
+# <a name="description"></a>
+${data.desc}
 
-##Credits: ${data.credits}
+#Installation 
+# <a name="installation"></a>
+${data.installation}
 
-##Licenses: ${data.licenses}
+##Usage 
+# <a name="usage"></a>
+${data.usage}
 
-##Badge: ${data.confirmAddBadge}
+#Credits 
+# <a name="credits"></a>
+${data.credits}
 
-##Contributors: ${data.contributors}
+#Licenses 
+# <a name="licenses"></a>
+${data.licenses}
 
-##Test: ${data.test}
+#Contributors 
+# <a name="contributors"></a>
+${data.contributors}
 
-##github: ${data.github}
+#Test 
+# <a name="tests"></a>
+${data.test}
 
-##link: ${data.link}
+#Questions 
+# <a name="questions"></a>
+GitHub Username: ${data.github}
+GitHub Profile Link: ${data.link}
+For questions, contact me at: ${data.email}
 
 `;
 }

@@ -174,7 +174,20 @@ const promptQuestions= () => {
         return false;
       }
     }
-  }
+  },
+  {
+      type: 'input',
+      name: 'email',
+      message: 'Enter your email to be contacted with any questions.',
+      validate: emailInput => {
+        if (emailInput){
+          return true; 
+        } else {
+          console.log('Please enter your email!');
+          return false;
+        }
+      }
+    }
     ]);
 };
 
