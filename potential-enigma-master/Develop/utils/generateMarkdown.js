@@ -26,7 +26,7 @@ ${data.desc}
 # <a name="installation"></a>
 ${data.installation}
 
-##Usage 
+#Usage 
 # <a name="usage"></a>
 ${data.usage}
 
