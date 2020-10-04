@@ -26,7 +26,7 @@ asdasd
 bob
 
 #Licenses <a name="licenses"></a><br>
-
+[![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)](https://opendatacommons.org/licenses/pddl/)
 
 #Contributors <a name="contributors"></a><br>
 undefined
