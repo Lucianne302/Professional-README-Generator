@@ -10,31 +10,31 @@
 * [Tests](#tests)
 * [Questions](#questions)
 
-#Badge <a name="badge"></a>
+#Badge <a name="badge"></a><br>
 undefined
 
-#Description <a name="description"></a>
+#Description <a name="description"></a><br>
 desc
 
-#Installation <a name="installation"></a>
+#Installation <a name="installation"></a><br>
 5
 
-#Usage <a name="usage"></a>
+#Usage <a name="usage"></a><br>
 asdasd
 
-#Credits <a name="credits"></a>
+#Credits <a name="credits"></a><br>
 bob
 
-#Licenses <a name="licenses"></a>
+#Licenses <a name="licenses"></a><br>
 
 
-#Contributors <a name="contributors"></a>
+#Contributors <a name="contributors"></a><br>
 undefined
 
-#Test <a name="tests"></a>
+#Test <a name="tests"></a><br>
 toast
 
-#Questions <a name="questions"></a>
+#Questions <a name="questions"></a><br>
 GitHub Username: jacl
 GitHub Profile Link: aasdas
 For questions, contact me at: ddd
