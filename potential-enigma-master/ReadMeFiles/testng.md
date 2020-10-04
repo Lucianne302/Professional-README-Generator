@@ -11,34 +11,32 @@
 * [Questions](#questions)
 
 #Badge <a name="badge"></a><br>
+[![License](https://img.shields.io/badge/)]()
 
-[![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)](https://opendatacommons.org/licenses/pddl/)
-
-[![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)](https://opendatacommons.org/licenses/pddl/) 
 
 #Description <a name="description"></a><br>
 asdsad
 
 #Installation <a name="installation"></a><br>
-asd
+asdasd
 
 #Usage <a name="usage"></a><br>
-asd
+asdasd
 
 #Credits <a name="credits"></a><br>
-asd
+asdasd
 
 #Licenses <a name="licenses"></a><br>
-PDDL
+MIT
 
 #Contributors <a name="contributors"></a><br>
 undefined
 
 #Test <a name="tests"></a><br>
-asd
+asdasdas
 
 #Questions <a name="questions"></a><br>
-GitHub Username: asd<br>
-GitHub Profile Link: asd<br>
-For questions, contact me at: asd
+GitHub Username: asdasd<br>
+GitHub Profile Link: asdsad<br>
+For questions, contact me at: asdasd
 
