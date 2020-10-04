@@ -49,7 +49,132 @@ const promptQuestions= () => {
                 return false;
               }
             }
+        },
+        {
+            type: 'input',
+            name: 'installation',
+            message: 'What are the steps required to install your project?',
+            validate: installationInput => {
+              if (installationInput){
+                return true; 
+              } else {
+                console.log('Please enter installation steps!');
+                return false;
+              }
+            }
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'Provide instructions and examples for use. (Optional: screenshots)',
+            validate: usageInput => {
+              if (usageInput){
+                return true; 
+              } else {
+                console.log('Please enter the user story!');
+                return false;
+              }
+            }
+        },
+        {
+            type: 'input',
+            name: 'credits',
+            message: 'Enter any collaborators, resources, tutorials or links used. ',
+            validate: creditsInput => {
+              if (creditsInput){
+                return true; 
+              } else {
+                console.log('Please enter credits and/or resources used!');
+                return false;
+              }
+            }
+        },
+        {
+            type: 'confirm',
+            name: 'confirmLicense',
+            message: 'Would you like to add a License?',
+            default: true
+        },     
+        {
+          type: 'checkbox',
+          name: 'licenses',
+          message: 'What license was used for this project? (Check all that apply)',
+          choices: ['Public domain', 'Permissive', 'LGPL', 'Copyleft', 'Proprietary']
+        },
+        {
+            type: 'confirm',
+            name: 'badgeConfirm',
+            message: 'Would you like to add a badge?',
+            default: true
+       },
+       {
+          type: 'input',
+          name: 'confirmAddBadge',
+          message: 'Share any badge earned.',
+          when: ({ badgeConfirm }) => {
+            if (badgeConfirm) {
+              return true;
+            } else {
+              return false;
+            }
+          }
+       },{
+        type: 'confirm',
+        name: 'addContributors',
+        message: 'Would you like to add other contributors?',
+        default: true
+   },
+   {
+      type: 'input',
+      name: 'contributors',
+      message: 'List the guidelines to other developers contributing to your application.',
+      when: ({ addContributors }) => {
+        if (addContributors) {
+          return true;
+        } else {
+          return false;
         }
+      }
+   },
+   {
+    type: 'input',
+    name: 'test',
+    message: 'How do you test your application?',
+    validate: testInput => {
+      if (testInput){
+        return true; 
+      } else {
+        console.log('Please describe how to test your application');
+        return false;
+      }
+    }
+},        
+{
+    type: 'input',
+    name: 'github',
+    message: 'Enter your Github Username: ',
+    validate: githubInput => {
+      if (githubInput){
+        return true; 
+      } else {
+        console.log('Please enter your Username!');
+        return false;
+      }
+    }
+},
+{
+    type: 'input',
+    name: 'link',
+    message: 'Enter the GitHub link to your project. (Required)',
+    validate: linkInput => {
+      if (linkInput){
+        return true; 
+      } else {
+        console.log('Please enter your GitHub link!');
+        return false;
+      }
+    }
+  }
     ]);
 };
 
