@@ -1,7 +1,51 @@
+// create the about section
+const genBadge = myBadge => {
+  console.log('***'+myBadge);
+
+  let tmpContent=""
+  let myLink="";
+  let myIcon="";
+
+  if (!myBadge) {
+      return '';
+  } 
+  
+if (myBadge=="PDDL"){
+  myLicense = ": ODbL"
+  myLink="https://opendatacommons.org/licenses/pddl/";
+  myIcon="License-PDDL-brightgreen.svg";
+} else if (myBadge=="LGPL"){
+  myLicense = ": LGPL v3"
+  myLink="https://www.gnu.org/licenses/lgpl-3.0";
+  myIcon="License-LGPL%20v3-blue.svg";
+} else if (myBadge=="ISC"){
+  myLicense = ": ISC"
+  myLink="https://opensource.org/licenses/ISC";
+  myIcon="License-ISC-blue.svg";
+} else if (myBadge==": MIT"){
+  myLicense = "MIT"
+  myLink="https://opensource.org/licenses/MIT";
+  myIcon="License-MIT-yellow.svg";
+} else if (myBadge=="Apache"){
+  myLicense = ""
+  myLink="https://opensource.org/licenses/Apache-2.0";
+  myIcon="License-Apache%202.0-blue.svg";
+}
+
+    return `
+    [![License`+myLicense+`](https://img.shields.io/badge/`+myIcon+`)](`+myLink+`)
+  `;
+};
+
+
 // function to generate markdown for README
 function generateMarkdown(data) {
   console.log(data);
   
+    // this will create three variables based on data in templateData
+    const { licenses, ...myData } = data;
+
+
   return `##Title: ${data.title}<br>
 
 ## Table of Contents: 
@@ -15,7 +59,8 @@ function generateMarkdown(data) {
 * [Questions](#questions)
 
 #Badge <a name="badge"></a><br>
-${data.confirmAddBadge}
+${genBadge(licenses)}
+
 
 #Description <a name="description"></a><br>
 ${data.desc}

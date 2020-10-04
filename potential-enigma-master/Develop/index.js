@@ -100,94 +100,89 @@ const promptQuestions= () => {
           name: 'licenses',
           message: 'What license was used for this project? (Check all that apply)',
           choices: ['PDDL', 'LGPL', 'ISC', 'MIT', 'Apache']
+        //   if (choices) {
+        //     PDDL = 
+
+        //   }
+/*            validate: licenseInput => {
+                if (licenseInput){
+                return PDDL; 
+                } else {
+                console.log('PDDL Badge');
+                return [![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)](https://opendatacommons.org/licenses/pddl/);
+                }
+                */
         },
         {
             type: 'confirm',
-            name: 'badgeConfirm',
-            message: 'Would you like to add a badge?',
+            name: 'addContributors',
+            message: 'Would you like to add other contributors?',
             default: true
-       },
-       {
-          type: 'input',
-          name: 'confirmAddBadge',
-          message: 'Share any badge earned.',
-          when: ({ badgeConfirm }) => {
-            if (badgeConfirm) {
-              return true;
-            } else {
-              return false;
+        },
+        {
+            type: 'input',
+            name: 'contributors',
+            message: 'List the guidelines to other developers contributing to your application.',
+            when: ({ addContributors }) => {
+                if (addContributors) {
+                return true;
+                } else {
+                return false;
             }
-          }
-       },{
-        type: 'confirm',
-        name: 'addContributors',
-        message: 'Would you like to add other contributors?',
-        default: true
-   },
-   {
-      type: 'input',
-      name: 'contributors',
-      message: 'List the guidelines to other developers contributing to your application.',
-      when: ({ addContributors }) => {
-        if (addContributors) {
-          return true;
-        } else {
-          return false;
         }
-      }
-   },
-   {
-    type: 'input',
-    name: 'test',
-    message: 'How do you test your application?',
-    validate: testInput => {
-      if (testInput){
-        return true; 
-      } else {
-        console.log('Please describe how to test your application');
-        return false;
-      }
-    }
-},        
-{
-    type: 'input',
-    name: 'github',
-    message: 'Enter your Github Username: ',
-    validate: githubInput => {
-      if (githubInput){
-        return true; 
-      } else {
-        console.log('Please enter your Username!');
-        return false;
-      }
-    }
-},
-{
-    type: 'input',
-    name: 'link',
-    message: 'Enter the GitHub link to your project. (Required)',
-    validate: linkInput => {
-      if (linkInput){
-        return true; 
-      } else {
-        console.log('Please enter your GitHub link!');
-        return false;
-      }
-    }
-  },
-  {
-      type: 'input',
-      name: 'email',
-      message: 'Enter your email to be contacted with any questions.',
-      validate: emailInput => {
-        if (emailInput){
-          return true; 
-        } else {
-          console.log('Please enter your email!');
-          return false;
+        },
+        {
+                type: 'input',
+                name: 'test',
+                message: 'How do you test your application?',
+                validate: testInput => {
+                if (testInput){
+                    return true; 
+                } else {
+                    console.log('Please describe how to test your application');
+                    return false;
+                }
+            }
+        },        
+        {
+                type: 'input',
+                name: 'github',
+                message: 'Enter your Github Username: ',
+                validate: githubInput => {
+                if (githubInput){
+                    return true; 
+                } else {
+                    console.log('Please enter your Username!');
+                    return false;
+                }
+            }
+        },
+        {
+                type: 'input',
+                name: 'link',
+                message: 'Enter the GitHub link to your project. (Required)',
+                validate: linkInput => {
+                if (linkInput){
+                    return true; 
+                } else {
+                    console.log('Please enter your GitHub link!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Enter your email to be contacted with any questions.',
+            validate: emailInput => {
+                if (emailInput){
+                return true; 
+                } else {
+                console.log('Please enter your email!');
+                return false;
+                }
+            }
         }
-      }
-    }
     ]);
 };
 
