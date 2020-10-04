@@ -1,4 +1,4 @@
-##Title: Test123<br>
+##Title: Test321<br>
 
 ## Table of Contents: 
 * [Description](#description) 
@@ -23,10 +23,10 @@ lorem
 asdf
 
 #Usage <a name="usage"></a><br>
-ladsf
+asdf
 
 #Credits <a name="credits"></a><br>
-asdfasdf
+asdf
 
 #Licenses <a name="licenses"></a><br>
 ISC
@@ -35,10 +35,10 @@ ISC
 undefined
 
 #Test <a name="tests"></a><br>
-console.log
+lasdfasdf
 
 #Questions <a name="questions"></a><br>
 GitHub Username: lucianne302<br>
-GitHub Profile Link: git.gitlucianne.302<br>
-For questions, contact me at: lucianne21@comcast.net
+GitHub Profile Link: git.gitlucianne302<br>
+For questions, contact me at: lucianne302@gmail.com
 
