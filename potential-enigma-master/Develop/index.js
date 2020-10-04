@@ -99,7 +99,7 @@ const promptQuestions= () => {
           type: 'checkbox',
           name: 'licenses',
           message: 'What license was used for this project? (Check all that apply)',
-          choices: ['Public domain', 'Permissive', 'LGPL', 'Copyleft', 'Proprietary']
+          choices: ['PDDL', 'LGPL', 'ISC', 'MIT', 'Apache']
         },
         {
             type: 'confirm',

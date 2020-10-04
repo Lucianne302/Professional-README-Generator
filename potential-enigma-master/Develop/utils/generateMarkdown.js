@@ -2,7 +2,7 @@
 function generateMarkdown(data) {
   console.log(data);
   
-  return `##Title: ${data.title}
+  return `##Title: ${data.title}<br>
 
 ## Table of Contents: 
 * [Description](#description) 
@@ -14,42 +14,33 @@ function generateMarkdown(data) {
 * [Tests](#tests)
 * [Questions](#questions)
 
-#Badge 
-# <a name="badge"></a>
+#Badge <a name="badge"></a><br>
 ${data.confirmAddBadge}
 
-#Description 
-# <a name="description"></a>
+#Description <a name="description"></a><br>
 ${data.desc}
 
-#Installation 
-# <a name="installation"></a>
+#Installation <a name="installation"></a><br>
 ${data.installation}
 
-#Usage 
-# <a name="usage"></a>
+#Usage <a name="usage"></a><br>
 ${data.usage}
 
-#Credits 
-# <a name="credits"></a>
+#Credits <a name="credits"></a><br>
 ${data.credits}
 
-#Licenses 
-# <a name="licenses"></a>
+#Licenses <a name="licenses"></a><br>
 ${data.licenses}
 
-#Contributors 
-# <a name="contributors"></a>
+#Contributors <a name="contributors"></a><br>
 ${data.contributors}
 
-#Test 
-# <a name="tests"></a>
+#Test <a name="tests"></a><br>
 ${data.test}
 
-#Questions 
-# <a name="questions"></a>
-GitHub Username: ${data.github}
-GitHub Profile Link: ${data.link}
+#Questions <a name="questions"></a><br>
+GitHub Username: ${data.github}<br>
+GitHub Profile Link: ${data.link}<br>
 For questions, contact me at: ${data.email}
 
 `;
