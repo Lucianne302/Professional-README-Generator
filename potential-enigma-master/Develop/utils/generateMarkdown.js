@@ -36,7 +36,9 @@ if (myBadge=="PDDL"){
 //tmpContent="[![License"+myLicense+"](https://img.shields.io/badge/"+myIcon+")]("+myLink+")";
 //return tmpContent;
 
-    return `[![License`+myLicense+`](https://img.shields.io/badge/`+myIcon+`)](`+myLink+`)`;
+    return `
+  [![License`+myLicense+`](https://img.shields.io/badge/`+myIcon+`)](`+myLink+`)
+  `;
 };
 
 
