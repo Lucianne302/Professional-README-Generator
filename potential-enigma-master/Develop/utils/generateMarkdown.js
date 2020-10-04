@@ -2,9 +2,10 @@
 const genBadge = myBadge => {
   console.log('***'+myBadge);
 
-  let tmpContent=""
+  let tmpContent="";
   let myLink="";
   let myIcon="";
+  let myLicense="";
 
   if (!myBadge) {
       return '';
@@ -31,6 +32,9 @@ if (myBadge=="PDDL"){
   myLink="https://opensource.org/licenses/Apache-2.0";
   myIcon="License-Apache%202.0-blue.svg";
 }
+
+//tmpContent="[![License"+myLicense+"](https://img.shields.io/badge/"+myIcon+")]("+myLink+")";
+//return tmpContent;
 
     return `
     [![License`+myLicense+`](https://img.shields.io/badge/`+myIcon+`)](`+myLink+`)
