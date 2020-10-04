@@ -43,3 +43,5 @@ tested applications adding console logs. answered the questions and validated th
 GitHub Username: Lucianne302
 GitHub Profile Link: git@github.com:Lucianne302/Professional-README-Generator.git
 For questions, contact me at: lucianne21@comcast.net
+
+Video: https://drive.google.com/file/d/1ykC6syPt9ZH1NpPufDfrJnlSAEQDUGYX/view 
